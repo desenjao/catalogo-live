@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Biaoli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Fundo laranja pastel */
+        }
+
+        header {
+            background-color: #ffcc99; /* Laranja pastel mais escuro */
+            padding: 1em;
+            text-align: center;
+            color: #5d4037; /* Marrom escuro complementar */
+        }
+
+        .container {
+            padding: 2em;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+        }
+
+        .item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            color: #ff7043; /* Laranja mais escuro */
+        }
+
+        .item p {
+            color: #757575; /* Cinza */
+        }
+
+        .item button {
+            background-color: #ff7043; /* Laranja mais escuro */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .item button:hover {
+            background-color: #e64a19; /* Laranja mais escuro */
+        }
+
+        @media (max-width: 600px) {
+            .catalogo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo Biaoli</h1>
+    </header>
+    <div class="container">
+        <div class="catalogo">
+            <div class="item">
+                <img src="https://via.placeholder.com/150" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/150" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/150" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>Descrição do produto 3.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
